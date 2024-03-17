@@ -9,7 +9,7 @@ builder.Services.AddDbContext<MyDatabaseContext>(options =>
 // builder.Services.AddDistributedMemoryCache();
 builder.Services.AddStackExchangeRedisCache(options =>
 {
-options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
+options.Configuration = builder.Configuration["msdocs-core-sql-man-cache.redis.cache.windows.net:6380,password=FST7lnBl8fcEW07KCuqzxJkesfqc0zn0BAzCaEYOFv4=,ssl=True,defaultDatabase=0"];
 options.InstanceName = "SampleInstance";
 });
 
